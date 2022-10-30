@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import { useForm } from "../hooks/useForm";
 import { SelectCity } from "./SelectCity";
 import { useComponents } from "./hook/useComponents";
@@ -27,6 +29,7 @@ export const SearchCountry = () => {
                 <button><FiSearch/></button>
             </form>
             <SelectCity cities={cities}/>
+            <ToastContainer />
         </>
     )
 }

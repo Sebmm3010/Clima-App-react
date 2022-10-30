@@ -1,3 +1,4 @@
+
 import { SearchCountry } from "./components/SearchCountry"
 
 export const ClimaApp = () => {

@@ -15,7 +15,6 @@ export const useComponents = (name) => {
         event.preventDefault();
         if (!name) return;
         const code = await getCountryCode(name);
-        if(!code) alert('No se puedp');
         setCities(await getCitiesByCode(code));
     }
 
