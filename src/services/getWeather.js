@@ -9,7 +9,7 @@ export const getWeather = async (lat, long) => {
         params: {
             lat: lat,
             lon: long,
-            appid:'13236d64e35ee7d6964cf72c145b742f',
+            appid: import.meta.env.VITE_APPID,
             units: 'metric'
         }
     };

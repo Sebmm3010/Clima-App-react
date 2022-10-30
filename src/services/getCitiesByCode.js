@@ -14,7 +14,7 @@ export const getCitiesByCode = async (code) => {
 
         },
         headers: {
-            'X-RapidAPI-Key': '32dee10c98mshb955f3c25847320p1646f1jsnb776d013bbb6',
+            'X-RapidAPI-Key': import.meta.env.VITE_X_RAPIDAPI_KEY,
             'X-RapidAPI-Host': 'spott.p.rapidapi.com'
         }
     };
