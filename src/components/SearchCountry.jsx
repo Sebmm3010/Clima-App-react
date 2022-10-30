@@ -1,6 +1,7 @@
 import { useForm } from "../hooks/useForm";
 import { SelectCity } from "./SelectCity";
 import { useComponents } from "./hook/useComponents";
+import { FiSearch } from 'react-icons/fi';
 
 
 const formData = {
@@ -14,9 +15,7 @@ export const SearchCountry = () => {
     const { handleSubmit, cities }=useComponents(buscar);
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="buscar">
-                    Elige un pais
+            <form className="searchform animate__animated animate__backInUp " onSubmit={handleSubmit}>
                     <input type="search"
                         name="buscar"
                         placeholder="Buscar un pais"
@@ -25,8 +24,7 @@ export const SearchCountry = () => {
                         onChange={onInputChange}
                         className="search"
                     />
-                    <button>Buscar</button>
-                </label>
+                <button><FiSearch/></button>
             </form>
             <SelectCity cities={cities}/>
         </>
