@@ -4,9 +4,9 @@ import { SearchCountry } from "./components/SearchCountry"
 export const ClimaApp = () => {
     
     return (
-        <>
-            <h1>Clima App</h1>
+        <div className="container-prime">
+            <h1 className="title animate__animated animate__backInDown">Clima-App</h1>
             <SearchCountry/>
-        </>
+        </div>
     )
 }

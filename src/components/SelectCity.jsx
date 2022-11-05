@@ -7,9 +7,9 @@ export const SelectCity = ({ cities = [] }) => {
     const { handleCoords, weather }= useComponents();
     return (
         cities.length > 0 &&
-        <div className="container select">
+        <div className="container-select animate__animated animate__zoomIn animate__faster">
             <label htmlFor="ciudad">Elige una ciudad</label>
-            <select name="ciudad" onChange={handleCoords}>
+            <select className="minimal" name="ciudad" onChange={handleCoords}>
                 <option>seleccione</option>
                 {
                     cities.map(({ coordinates, id, name }) => (

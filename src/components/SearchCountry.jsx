@@ -20,13 +20,13 @@ export const SearchCountry = () => {
             <form className="searchform animate__animated animate__backInUp " onSubmit={handleSubmit}>
                     <input type="search"
                         name="buscar"
-                        placeholder="Buscar un pais"
+                        placeholder="Buscar un país"
                         autoComplete="off"
                         value={buscar}
                         onChange={onInputChange}
                         className="search"
                     />
-                <button><FiSearch/></button>
+                <button className="btn-search hvr-grow hvr-sweep-to-top"><FiSearch/></button>
             </form>
             <SelectCity cities={cities}/>
             <ToastContainer />
