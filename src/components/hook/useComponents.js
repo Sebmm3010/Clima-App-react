@@ -37,7 +37,6 @@ export const useComponents = (name) => {
         switch (en) {
             case 'Thunderstorm':
                 return 'Tormenta electrica';
-
             case 'Drizzie':
                 return 'Llovizna';
             case 'Rain':

@@ -123,6 +123,9 @@ select:-moz-focusring {
 .text-wrap{
   padding: 1rem;
 }
+.text-wrap h3{
+  color: #5d5c5c;
+}
 .text-wrap span{
   color: #fff;
 }
@@ -195,4 +198,21 @@ select:-moz-focusring {
 .hvr-sweep-to-top:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
+}
+
+@media only screen and (max-width: 768px) {
+  .title{
+    font-size: 1.9em;
+  }
+  .btn-search{
+    width: 10vw;
+  }
+
+  .content-wrapper{
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .text-wrap h3{
+    margin-top: 10px;
+  }
 }
